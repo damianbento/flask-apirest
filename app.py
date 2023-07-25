@@ -12,8 +12,8 @@ USUARIOS = {
 
 @app.route('/api/login', methods=['POST'])
 def login():
-    username = request.json.get('admin')
-    password = request.json.get('admin123')
+    username = request.json.get('xxxxx')
+    password = request.json.get('xxxxx')
 
     if not username or not password:
         return jsonify({"error": "Falta el nombre de usuario o contraseña"}), 400

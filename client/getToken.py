@@ -12,7 +12,7 @@ def main():
     try:
         username = input("Ingresa el nombre de usuario: ")
         password = getpass("Ingrese el password: ")
-        url = "http://200.45.133.21:3000/api/login"  # Reemplaza esto con la URL de tu API
+        url = "http://xxx.xxx.xxx.xxx:3000/api/login"  # Reemplaza esto con la URL de tu API
         data = {
             username: "usuario",
             password: "contrasena"
