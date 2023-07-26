@@ -1,5 +1,6 @@
 from getpass import getpass
 import requests
+import os
 
 def realizar_solicitud(url, data):
     headers = {
@@ -12,7 +13,7 @@ def main():
     try:
         username = input("Ingresa el nombre de usuario: ")
         password = getpass("Ingrese el password: ")
-        url = "http://xxx.xxx.xxx.xxx:3000/api/login"  # Reemplaza esto con la URL de tu API
+        url = os.environ.get('API_LOGIN_URL')  # Reemplaza esto con la URL de tu API
         data = {
             username: "usuario",
             password: "contrasena"
